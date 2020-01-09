@@ -12,3 +12,7 @@ makedocs(;
     sitename="SignalBase.jl",
     authors="David F. Little",
 )
+
+deploydocs(;
+    repo="github.com/haberdashPI/SignalBase.jl",
+)
