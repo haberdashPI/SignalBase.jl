@@ -2,6 +2,7 @@
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://haberdashpi.github.io/SignalBase.jl/stable)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://haberdashpi.github.io/SignalBase.jl/dev)
+[![Build Status](https://travis-ci.org/haberdashPI/SignalBase.jl.svg?branch=master)](https://travis-ci.org/haberdashPI/SignalBase.jl)
 
 SignalBase defines a basic API to inspect finite or infinite length signals that are regularly sampled in time. It consists of the following functions.
 
