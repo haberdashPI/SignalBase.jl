@@ -1,8 +1,22 @@
 # SignalBase.jl
 
-```@index
+## Signal Inspection API
+
+```@docs
+inflen
+SignalBase.isinf
+channeltype
+nchannels
+framerate
+nframes
+duration
 ```
 
-```@autodocs
-Modules = [SignalBase]
+# Unit Utility Functions
+
+```@docs
+inframes
+inradians
+inseconds
+inHz
 ```

@@ -1,5 +1,8 @@
 module SignalBase
+using Unitful
 
-greet() = print("Hello World!")
+include("api.jl")
+include("inflen.jl")
+include("units.jl")
 
 end # module

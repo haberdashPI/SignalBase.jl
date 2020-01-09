@@ -3,6 +3,9 @@ uuid = "00c44e92-20f5-44bc-8f45-a1dcef76ba38"
 authors = ["David F. Little"]
 version = "0.1.0"
 
+[deps]
+Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
+
 [compat]
 julia = "1"
 
