@@ -65,6 +65,9 @@ of frames. If given a `Type`, the result will first be coerced to the given type
 If the given quantity is Unitful, we use the given units. If it is not we assume
 it is already a value in frames.
 
+For some units (e.g. frames) you will need to specify a frame rate. If not
+specified the rate is `missing`.
+
 # Example
 
 ```jldoctest
@@ -87,8 +90,6 @@ function inframes(::Type{T}, frame::Number, rate=missing) where T
 end
 inframes(::Missing,fs=missing) = missing
 inframes(::Type,::Missing,fs=missing) = missing
-inframes(::InfiniteLength,fs=missing) = inflen
-inframes(::Type, ::InfiniteLength,fs=missing) = inflen
 
 """
     inHz(quantity)
@@ -123,7 +124,8 @@ seconds.
 If the given quantity is Unitful, we use the given units. If it is not we assume
 it is already a value in seconds.
 
-For some units (e.g. frames) you will need to specify a frame rate:
+For some units (e.g. frames) you will need to specify a frame rate. If not
+specified the rate is `missing`.
 
 ## Examples
 
@@ -150,8 +152,6 @@ function inseconds(::Type{T},x::Number,rate=missing) where T
 end
 inseconds(::Missing,r=missing) = missing
 inseconds(::Type,::Missing,r=missing) = missing
-inseconds(::InfiniteLength,r=missing) = inflen
-inseconds(::Type,::InfiniteLength,r=missing) = inflen
 
 maybeseconds(n::Number) = n*s
 maybeseconds(n::Quantity) = n

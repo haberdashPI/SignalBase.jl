@@ -3,9 +3,7 @@
 ## Signal Inspection API
 
 ```@docs
-inflen
-SignalBase.isinf
-channeltype
+sampletype
 nchannels
 framerate
 nframes
