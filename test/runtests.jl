@@ -34,8 +34,4 @@ using Test
     @test_throws Unitful.DimensionError inradians(15frames)
     @test inradians(180°) ≈ π
     @test ismissing(inseconds(2frames))
-
-    @test inflen*missing == inflen
-    @test min(10,inflen) == 10
-    @test ismissing(min(missing,inflen))
 end
