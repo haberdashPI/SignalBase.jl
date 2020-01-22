@@ -10,7 +10,7 @@ SignalBase defines a basic API to inspect signals that are regularly sampled in 
 - [`nchannels`](https://haberdashpi.github.io/SignalBase.jl/dev/#SignalBase.nchannels): the number of samples per frame
 - [`framerate`](https://haberdashpi.github.io/SignalBase.jl/dev/#SignalBase.framerate): the number of frames per second, can be a `missing` value.
 - [`nframes`](https://haberdashpi.github.io/SignalBase.jl/dev/#SignalBase.nframes): the number of frames; this can be a `missing` value
-- [`duration`](https://haberdashpi.github.io/SignalBase.jl/dev/#SignalBase.duration): the duration in seconds of the signal (defaults to nframes(x) / framerate(x)). This value can be a `missing` value. This could be defined seperately from nframes if, for example, the framerate is unknown but the duration is known.
+- [`duration`](https://haberdashpi.github.io/SignalBase.jl/dev/#SignalBase.duration): the duration in seconds of the signal (defaults to `nframes(x) / framerate(x)`). This value can be a `missing` value. This could be defined seperately from `nframes` if, for example, the framerate is unknown but the duration is known.
 
 For example, one natural definition of an `Array`, interpreted as a signal would be as follows.
 
@@ -25,7 +25,7 @@ Such a definition is provided by [`SignalOperators`](https://github.com/haberdas
 
 ## Units
 
-This package also defines a set of utility functions for working with units relevant to signals via [`Unitful`](https://github.com/PainterQubits/Unitful.jl): namely, radians, frames, seconds and Hertz. The `frames` unit is newly defined here so that converstions between frames and units of time is convienient and unambiguous. The other three are already defined by `Unitful`. The following functions are available.
+This package also defines a set of utility functions for working with units relevant to signals via [`Unitful`](https://github.com/PainterQubits/Unitful.jl): namely, radians, frames, seconds and Hertz. The `frames` unit is newly defined here so that conversions between frames and units of time is convienient and unambiguous. The other three are already defined by `Unitful`. The following functions are available.
 
 - [`inradians`](https://haberdashpi.github.io/SignalBase.jl/dev/#SignalBase.inradians): converts a quantity to radians
 - [`inframes`](https://haberdashpi.github.io/SignalBase.jl/dev/#SignalBase.inframes): converts a quantity to frames
