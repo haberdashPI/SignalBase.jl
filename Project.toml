@@ -1,14 +1,14 @@
 name = "SignalBase"
 uuid = "00c44e92-20f5-44bc-8f45-a1dcef76ba38"
 authors = ["David F. Little"]
-version = "0.1.1"
+version = "0.1.2"
 
 [deps]
 Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 
 [compat]
 julia = "1"
-Unitful = "0.11,0.12,0.13,0.14,0.15,0.16,0.17,0.18"
+Unitful = "0.11,0.12,0.13,0.14,0.15,0.16,0.17,0.18,1.0"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
