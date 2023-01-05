@@ -13,8 +13,8 @@ module Units
     const SampDim = Unitful.Dimensions{(Unitful.Dimension{:Frame}(1//1),)}
     const FrameQuant{N} = Quantity{N,𝐒}
 
-    const localunits = Unitful.basefactors
-    const localpromotion = Unitful.promotion
+    const localunits = copy(Unitful.basefactors)
+    const localpromotion = copy(Unitful.promotion)
     function __init__()
         merge!(Unitful.basefactors,localunits)
         merge!(Unitful.promotion, localpromotion)
